@@ -1,0 +1,119 @@
+header {
+    background-image: url(images/05.jpg);
+    font-family: 'pocket_monkregular', Arial, sans-serif;
+    font-size: x-large;
+    color: #ff4d4d;
+    text-shadow: 5px 2px 4px grey;
+    text-align: center;
+    letter-spacing: 5px;
+    min-width: 100vh;
+    background-image: url(images/05.jpg);
+    
+}
+
+body {
+    /* background-image: url(images/05.jpg); */
+    background: #fef3e6;
+
+    text-align: center;
+
+}
+
+footer {
+    /* border: 5px solid purple; */
+    float: left;
+    position: relative;
+    bottom: 0px;
+    
+    margin-top: 5%; 
+    height: 10%;
+    width: 100vw;
+    /* background: #ffbb33; */
+    background-color: #333;
+}
+
+main {
+    background: white;
+    border: 1px solid grey ;
+    /* background-image: url(images/05.jpg); */
+    /* border: 5px solid cyan; */
+    position: relative;
+    width: 1200px;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+    /*float: left;
+    margin-right: 0px;
+    margin-left: 3.5%; */
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+
+}
+
+nav {
+    min-width: 100vh;
+    /* background: #ffbb33; */
+    background-color: #333;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    /* border: 5px solid darkblue; */
+    height: 60px;
+    margin-bottom: 5%;
+}
+
+.nav-link {
+    border-right: 1px solid #888;
+    float: left;
+    height: 53%;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #f6eded;
+
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+    color: black;
+
+}
+
+
+/* Not clickable links */
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: #888;
+
+}
+
+#logo {
+    width: 30%;
+    height: 90%;
+    float: right;
+    position: relative;
+    top: 0px;
+    right: 0px;
+
+}
+
+
+@font-face {
+    font-family: 'pocket_monkregular';
+    src: url('font/pocket_monk-webfont.woff2') format('woff2'),
+        url('font/pocket_monk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
