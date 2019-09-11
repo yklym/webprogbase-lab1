@@ -1,3 +1,12 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+p {
+    padding: 10px;
+}
+
 header {
     background-image: url(images/05.jpg);
     font-family: 'pocket_monkregular', Arial, sans-serif;
@@ -10,9 +19,16 @@ header {
 }
 
 body {
-    /* background-image: url(images/05.jpg); */
-    background: #fef3e6;
-    
+    /* background: #fef3e6; */
+
+    background: #d9a7c7;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #fffcdc, rgba(217, 167, 199, 0.6));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, rgb(255, 252, 220), rgba(217, 167, 199, 0.6));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     text-align: center;
 
 }
@@ -21,8 +37,8 @@ footer {
     /* border: 5px solid purple; */
     float: left;
     position: relative;
-    bottom: 0px;
-    margin-bottom: 0px;
+    /* bottom: -px; */
+    clear: both;
 
     margin-top: 3%;
     height: 10%;
@@ -38,8 +54,6 @@ main {
     min-height: 62%;
     background: white;
     border: 1px solid grey;
-    /* background-image: url(images/05.jpg); */
-    /* border: 5px solid cyan; */
     position: relative;
     width: 1200px;
     display: inline-block;
@@ -63,13 +77,10 @@ body {
 
 nav {
     min-width: 100vh;
-    /* background: #ffbb33; */
     background-color: #333;
     position: -webkit-sticky;
-    /* Safari */
     position: sticky;
     top: 0;
-    /* border: 5px solid darkblue; */
     height: 60px;
     z-index: 1;
 
@@ -77,13 +88,14 @@ nav {
 
 .nav-link,
 .nav-link-active {
-    border-right: 1px solid #888;
+    border-right: 2px solid rgb(138, 131, 131);
     float: left;
     height: 53%;
     display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-weight: bold;
     color: #f6eded;
 
 }
@@ -101,7 +113,8 @@ nav {
 
 
 .login {
-    border-left: 1px solid #888;
+    border-right: none;
+    border-left: 2px solid rgb(138, 131, 131);
 
     float: right;
 }
@@ -158,7 +171,7 @@ nav {
     width: 100%;
 }
 
-.table a{
+.table a {
     text-decoration: none;
     color: red;
 }
@@ -169,60 +182,203 @@ td {
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
+
+/* ENTITY */
+/* --------------------------------------- */
+.entities-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.filters {
+    /* border: 5px groove purple; */
+    /* float: left; */
+    width: 100%;
+    height: 45%;
+    position: relative;
+
+    background: white;
+    border: 1px groove grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    
+    /* TEMPORARY */
+    font-family: 'pocket_monkregular', Arial, sans-serif;
+    font-size: large;
+    color: #ff4d4d;
+    text-shadow: 5px 2px 4px rgb(194, 191, 191);
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.filter-box {
+    /* border: 5px groove purple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+    float: left;
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-left: 10%;
+    width: 13%;
+    height: 75%;
+    position: relative;
+
+    /* border: 2px groove grey; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+}
+
+.entities-main {
+    width: 1000px;
+    display: block;
+    float: left;
+    margin-right: 5%;
+    /* float: right; */
+
+
+}
+
+.entity {
+    flex: 1;
+
+    border: 2px solid rgb(80, 80, 80);
+    background-color: rgba(255, 252, 220, 0.6); 
+    margin: 3%;
+    /* max-width: 20%; */
+    min-width: 150px;
+    /* max-height: 30%; */ 
+    height: 250px;
+    padding: 2px;
+}
+.entity img{
+    border: 3px solid rgb(233, 175, 179);
+    width:90%;
+    height:80%;
+}
+.entity a{
+    text-decoration: none;
+    color: rgb(49, 45, 45);
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'pocket_monkregular', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+/* ---------------------------------------- */
 /* USER PROFILE */
 /* --------------------------------------- */
-.user-profile{
+.user-profile {
     min-height: 40%;
     margin-bottom: 6%;
 
 }
+
 .user-profile-flex-wrapper {
     display: flex;
     align-items: center;
-    
+
 }
 
-.picture-wrapper{
-    border: 3px solid green;
-    min-width: 150px;
-    min-height: 150px;
+.picture-wrapper {
+
+    background: #fc4a1a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgba(247, 183, 51, 0.4), rgba(252, 74, 26, 0.4));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgba(247, 183, 51, 0.4), rgba(252, 74, 26, 0.4));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border: 3px dashed green;
+    max-width: 150px;
+    max-height: 150px;
     margin: 20px;
 }
 
 .user-details {
+    padding-top: 40px;
     border: 3px dashed pink;
     display: flex;
+    justify-content: space-around;
+
     min-height: 300px;
     margin: 20px;
-    background: #ff4d4d 
-        url(../images/user_background.png)
-        right top
-        no-repeat
-        fixed;
-        background-size: 100% 100%; 
-    opacity: 0.6;
-    flex:2;
+    background: #d9a7c7;
+    background: -webkit-linear-gradient(to left, #fffcdc, rgba(217, 167, 199, 0.6));
+    background: linear-gradient(to left, rgba(217, 167, 199, 0.6), #fffcdc);
 
+    /* background: rgba(0, 0, 0, 0.6) url(../images/user_background.png) right top no-repeat fixed; */
+    background-size: 100% 100%;
+    /* opacity: 0.6; */
+    flex: 2;
 }
 
 .user-details ul {
     list-style-type: none;
     text-align: left;
     font-size: 25px;
+    padding: 0px;
 
-} 
-.user-details .bold{
+
+}
+
+.bold {
     font-weight: bolder;
+}
 
+.user-details .italic {
+    font-weight: bolder;
+    font-style: italic;
+    text-shadow: 1px 1px rgb(246, 189, 82);
 }
 
 .user-details li {
-   margin-bottom: 10px;
+    margin-bottom: 10px;
 
 }
 
+.bold .user-profile-row-1 {
+    text-shadow: 2px 2px rgb(246, 189, 82);
 
+}
 
+.italic .user-profile-row-1 {
+    text-shadow: 2px 2px rgb(246, 189, 82);
+    /* border-right: 3px solid rgb(246, 189, 82); */
+
+}
+
+.bold .user-profile-row-2 {
+    text-shadow: 2px 2px #e066ff;
+}
+
+.italic .user-profile-row-2 {
+    text-shadow: 2px 2px #e066ff;
+    /* border-right: 3px solid #e066ff; */
+
+}
+
+.bold .user-profile-row-3 {
+    text-shadow: 2px 2px #ff0066;
+}
+
+.italic .user-profile-row-3 {
+    text-shadow: 2px 2px #ff0066;
+    /* border-right: 3px solid #ff0066; */
+}
+
+.bold .user-profile-row-4 {
+    text-shadow: 2px 2px hsl(246, 100%, 70%);
+
+}
+
+.italic .user-profile-row-4 {
+    text-shadow: 2px 2px hsl(246, 100%, 70%);
+
+}
 
 /* ----------------------------------------- */
 @font-face {
