@@ -8,10 +8,10 @@ p {
 }
 
 header {
-    background-image: url(images/05.jpg);
+    background-image: url(../images/05.jpg);
     font-family: 'pocket_monkregular', Arial, sans-serif;
     font-size: x-large;
-    color: #ff4d4d;
+    color: #f54259;
     text-shadow: 5px 2px 4px grey;
     text-align: center;
     letter-spacing: 5px;
@@ -23,10 +23,11 @@ body {
 
     background: #d9a7c7;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #fffcdc, rgba(217, 167, 199, 0.6));
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, rgb(255, 252, 220), rgba(217, 167, 199, 0.6));
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: -webkit-linear-gradient(to left, #fffcdc, rgba(217, 167, 199, 0.6)); */
+    background: rgb(255, 252, 220);
+
+    /* background: linear-gradient(to left, rgb(255, 252, 220), rgba(217, 167, 199, 0.6)); */
+
 
 
     text-align: center;
@@ -58,7 +59,7 @@ main {
     width: 1200px;
     display: inline-block;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    padding-top: 2%;
 
     /*float: left;
     margin-right: 0px;
@@ -101,7 +102,7 @@ nav {
 }
 
 .nav-link-active {
-    background-image: url(images/04.jpg);
+    background-image: url(../images/04.jpg);
 
 }
 
@@ -159,7 +160,7 @@ nav {
 }
 
 .table {
-    margin: 20px;
+    margin: 10px;
 }
 
 .table-head~tr:hover {
@@ -183,7 +184,95 @@ td {
     border-bottom: 1px solid #ddd;
 }
 
-/* ENTITY */
+/* ENTITIES-PAGE */
+/* --------------------------------------- */
+.entitiy-page-wrapper {
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    padding: 3%;
+    min-height: 100%;
+}
+
+.entitiy-page-wrapper div {
+    margin: 2%;
+}
+
+
+
+.entity-page-photo-collection {
+    background: rgba(236, 231, 234, 0.5);
+    border: 5px solid rgb(155, 48, 29);
+    /* align-self: center; */
+    width: 100%;
+    min-height: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    /* flex: 5; */
+}
+
+.entity-page-photo-collection .entity-page-image {
+    /* size: auto; */
+    width: auto;
+    height: auto;
+    min-width: auto;
+    min-height: auto;
+    max-width: 30%;
+    max-height: 60%;
+
+}
+
+.entity-page-main {
+    background: rgba(236, 231, 234, 0.5);
+    border: 5px solid rgb(155, 48, 29);
+    /* align-self: center; */
+    width: 100%;
+    /* flex: 5; */
+}
+
+.entity-page-image {
+    background: rgba(252, 253, 203, 0.5);
+    border: 3px solid greenyellow;
+    width: 20%;
+    min-height: 20%;
+    padding: 0px;
+    display: flex;
+    /* flex: 1; */
+}
+
+.entity-page-image img {
+
+    margin: auto;
+    border: 3px solid rgb(233, 175, 179);
+    width: 90%;
+    height: 90%;
+}
+
+
+.entity-page-info {
+    background: rgba(236, 231, 234, 0.5);
+    border: 3px solid black;
+    width: 70%;
+    min-height: 20%;
+    display: flex;
+    justify-content: center;
+    /* flex: 2; */
+
+}
+
+.entity-page-info tr:hover {
+    background-color: #d6d4d4;
+}
+
+.entity-page-info .table {
+    font-weight: 700;
+    width: 45%;
+    margin: 5%;
+}
+
+
+/* ENTITIES-LIST */
 /* --------------------------------------- */
 .entities-wrapper {
     display: flex;
@@ -201,8 +290,8 @@ td {
     background: white;
     border: 1px groove grey;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
-    
+
+
     /* TEMPORARY */
     font-family: 'pocket_monkregular', Arial, sans-serif;
     font-size: large;
@@ -218,7 +307,7 @@ td {
     flex-direction: column;
     justify-content: space-between;
 
-    
+
     float: left;
     margin-top: 3%;
     margin-right: 3%;
@@ -246,20 +335,22 @@ td {
     flex: 1;
 
     border: 2px solid rgb(80, 80, 80);
-    background-color: rgba(255, 252, 220, 0.6); 
+    background-color: rgba(255, 252, 220, 0.6);
     margin: 3%;
     /* max-width: 20%; */
     min-width: 150px;
-    /* max-height: 30%; */ 
+    /* max-height: 30%; */
     height: 250px;
     padding: 2px;
 }
-.entity img{
+
+.entity img {
     border: 3px solid rgb(233, 175, 179);
-    width:90%;
-    height:80%;
+    width: 90%;
+    height: 80%;
 }
-.entity a{
+
+.entity a {
     text-decoration: none;
     color: rgb(49, 45, 45);
     font-size: x-large;
@@ -374,12 +465,10 @@ td {
     text-shadow: 2px 2px hsl(246, 100%, 70%);
 
 }
-
 .italic .user-profile-row-4 {
     text-shadow: 2px 2px hsl(246, 100%, 70%);
 
 }
-
 /* ----------------------------------------- */
 @font-face {
     font-family: 'pocket_monkregular';
